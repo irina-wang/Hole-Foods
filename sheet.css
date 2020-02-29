@@ -103,7 +103,7 @@
         .page a { font-size: 13px; }
     }
 
-    @media screen and (max-width: 725px)
+    @media screen and (max-width: 740px)
     {
         .page a { font-size: 11px; }
     }
@@ -153,7 +153,7 @@
         text-align: center;
     }
 
-    .fa-google, .fa-facebook,
+    .fa-yelp, .fa-facebook,
     .fa-instagram {
         background: white;
         color: black;
