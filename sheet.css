@@ -103,7 +103,7 @@
         .page a { font-size: 12px; }
     }
 
-    @media screen and (max-width: 750px)
+    @media screen and (max-width: 760px)
     {
         .page a { font-size: 11px; }
     }
