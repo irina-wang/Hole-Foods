@@ -16,11 +16,11 @@
         top: 0;
         background-color: #fff;
         box-shadow: 1px 0 5px #c0c0c0;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        -ms-transition: all ease 0.5s;
-        -o-transition: all ease 0.5s;
-        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.1s;
+        -moz-transition: all ease 0.1s;
+        -ms-transition: all ease 0.1s;
+        -o-transition: all ease 0.1s;
+        transition: all ease 0.1s;
     }
 
     .menu ul {
@@ -114,6 +114,7 @@
             margin-top: 0;
             height: 200px;
         }
+
         .close-menu {
             position: absolute;
             right: 25px;
