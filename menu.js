@@ -3,6 +3,6 @@ $(document).ready(function(){
         $('.menu').animate({left: '0px'}, 100)
     });
     $('.close-menu').click(function () {
-        $('.menu').animate({left: '-650px'}, 100)
+        $('.menu').animate({left: '-100%'}, 100)
 });
 });
