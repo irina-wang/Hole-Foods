@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.menu-ham').on("vclick", "p", function () {
+    $('.menu-ham').click(function () {
         $('.menu').animate({left: '0px'}, 100)
     });
     $('.close-menu').click(function () {
