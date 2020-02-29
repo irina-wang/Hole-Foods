@@ -100,10 +100,10 @@
 
     @media screen and (max-width: 850px)
     {
-        .page a { font-size: 13px; }
+        .page a { font-size: 12px; }
     }
 
-    @media screen and (max-width: 740px)
+    @media screen and (max-width: 750px)
     {
         .page a { font-size: 11px; }
     }
