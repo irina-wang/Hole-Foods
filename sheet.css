@@ -184,6 +184,10 @@ h1 {
     h1 { padding-bottom: 0; }
 
     .navbar { margin: 0; }
+
+    #copyright {
+        font-size: 15px; 
+    }
 }
 
 @media screen and (max-width: 475px) 
