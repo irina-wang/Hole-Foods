@@ -141,7 +141,7 @@ h1 {
     .page a { font-size: 10px; }
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 680px)
 {
     .close-menu {
         position: absolute;
