@@ -109,6 +109,7 @@ h1 {
 
 #foot_logo {
     margin: 0 18px;
+    height: 75px;
 }
 
 .fa-yelp, .fa-facebook,
@@ -186,8 +187,13 @@ h1 {
 
 @media screen and (max-width: 475px) 
 {
-    .foot { font-size: 15px; }
+    .foot { 
+        font-size: 15px; 
+    }
 
+    #foot_logo {
+        height: 50px;
+    }
     #copyright {
         font-size: 12px; 
     }
