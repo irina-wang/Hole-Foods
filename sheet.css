@@ -107,6 +107,10 @@ h1 {
     margin: 0 18px 18px 18px;
 }
 
+#foot_logo {
+    margin: 0 18px;
+}
+
 .fa-yelp, .fa-facebook,
 .fa-instagram {
     background: white;
@@ -115,6 +119,7 @@ h1 {
     font-size: 20px;
     padding: 0 5px;
     margin-bottom: 10px;
+
 }
 
 /* --------- ADJUSTMENTS --------- */
