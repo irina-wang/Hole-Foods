@@ -16,6 +16,53 @@
 <script type="text/javascript" src="menu.js"></script>
 <!----------------->
 
+<style type="text/css">
+    .cover {
+        background-image: url("cover2.jpg");
+        min-height: 500px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .cover {
+            min-height: 450px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .cover {
+            min-height: 350px;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .cover {
+            min-height: 300px;
+        }
+    }
+    .row {display: flex;}
+
+    .col {
+        flex: 50%;
+        box-sizing: border-box;
+        border: 2px solid blue;
+        height: 400px;
+    }
+
+    .elist {
+        box-sizing: border-box;
+        border: 2px solid red;
+        height: 200px;
+    }
+
+</style>
+</head>
+
+<body>
+
 <!-- MUST INCLUDE -- CODE FOR HEADER AND MENU -->
 <div id="left"></div>
 <div id="right"></div>
@@ -54,6 +101,22 @@
 </nav>
 <!-------------------------------->
 
+<div class="cover"></div>
+<div style="height:600px;font-size:36px">
+    <div class="row">
+        <div id="col1" class="col">
+            box 1
+        </div>
+        <div id="col2" class="col">
+            box 2
+        </div>
+    </div>
+    <div class="elist">
+        box 3
+    </div>
+</div>
+
+<hr>
 
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
 <footer class="foot">
