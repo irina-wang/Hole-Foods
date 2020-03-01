@@ -194,6 +194,7 @@ h1 {
 {
     .foot { 
         font-size: 15px; 
+        height: 150px;
     }
 
     #foot_logo {
@@ -202,4 +203,5 @@ h1 {
     #copyright {
         font-size: 12px; 
     }
+
 }
