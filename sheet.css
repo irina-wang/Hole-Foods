@@ -158,6 +158,10 @@ h1 {
         height: 20px;
     }
 
+    .menu li a {
+        font-size: 14px;
+    }
+
     .menu-ham {
         display: inline-block;
         height: 40px;
@@ -192,6 +196,13 @@ h1 {
 
 @media screen and (max-width: 475px) 
 {
+    .close-menu img {
+        height: 15px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
     .foot { 
         font-size: 15px; 
         height: 175px;
