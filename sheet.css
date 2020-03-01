@@ -187,4 +187,8 @@ h1 {
 @media screen and (max-width: 475px) 
 {
     .foot { font-size: 15px; }
+
+    #copyright {
+        font-size: 12px; 
+    }
 }
