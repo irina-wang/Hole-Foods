@@ -108,6 +108,7 @@ h1 {
 }
 
 #foot_logo {
+    padding-top: 10px;
     margin: 0 18px;
     height: 75px;
 }
