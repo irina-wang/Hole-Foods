@@ -71,6 +71,15 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+
 .navbar {
     text-align: center;
     width: 100%;
