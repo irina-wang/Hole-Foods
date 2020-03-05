@@ -84,6 +84,7 @@
         margin:5%;
         position: absolute;
 
+
     }
 
     .overlay {
@@ -151,6 +152,80 @@
         text-decoration: none;
         margin: 4px 2px;
     }
+
+    }
+
+    
+
+.overlay {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(209, 117, 80);
+}
+
+.img:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size:25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+   
+.line{
+    box-sizing: border-box;
+    color:rgba(197, 16, 16, 0.979);
+    padding-left: 2.5%;
+    width:95%;
+}
+
+input[type=email] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+input[type=email]:focus {
+  background-color: rgb(255, 255, 255);
+border: black;
+}
+
+input[type=button] {
+  background-color: white;
+  border:2px solid black;
+  color:black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  flex-wrap: wrap;
+
+}
+
+input[type=button]:hover{
+  background-color: black;
+  border:2px solid black;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  flex-wrap: wrap;
+}
+  
 </style>
 </head>
 
@@ -199,6 +274,7 @@
     <div class="intro" style="text-align: center; padding:20px;">
         <h2 style="font-size: 50px;">It's Donut Time! </h2>
         <h1><a href="menu.html">>>> See our unique collections</a></h1> <br/>
+        <h3><a href="menu.html">>>> See our unique collections</a></h3> <br/>
     </div>
 
     <div class="line">
@@ -230,6 +306,8 @@
     <div class="elist">
         <h2 >JOIN OUR LIST</h2>
         <h1 style="padding-top: 10px;padding-bottom: 0px;">Be the first to know about our latest promotions and new releases</h1>
+        <h3>Be the first to know about our latest promotions and new releases</h3>
+
         <form>
             <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input> <br/>
             <script>
