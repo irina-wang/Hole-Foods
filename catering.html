@@ -109,6 +109,18 @@
 				alert("Please enter your email");
 				return false;
 			}
+			
+			if (numGuests == "" || numGuests == null) 
+			{
+				alert("Please enter the number of guests");
+				return false;
+			}
+			if (streetAd == "" || state == "" || zipcode == "" || streetAd == null || state == null || zipcode == null) 
+			{
+				alert("Please enter your address")
+				return false;
+			}
+			
 			if (phoneNumber == "" || phoneNumber == null)
 			{
 				alert("Please enter your phone number.")
@@ -121,16 +133,6 @@
 					alert("Please enter a valid phone number.")
 					return false;
 				}
-			}
-			if (numGuests == "" || numGuests == null) 
-			{
-				alert("Please enter the number of guests");
-				return false;
-			}
-			if (streetAd == "" || state == "" || zipcode == "" || streetAd == null || state == null || zipcode == null) 
-			{
-				alert("Please enter your address")
-				return false;
 			}
 			
 		}
