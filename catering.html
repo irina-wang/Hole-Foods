@@ -82,12 +82,13 @@
 	<script language="javascript">
 		function validateForm() 
 		{
-			var firstName = document.getElementById("fname");
-			var lastName = document.getElementById("lname");
-			var valEmail = document.getElementById("email");
-			var phoneNumber = document.getElementById("phoneNum");
+			var firstName = document.getElementById("fname").value;
+			var lastName = document.getElementById("lname").value;
+			var valEmail = document.getElementById("email").value;
+			var phoneNumber = document.getElementById("phoneNum").value;
 			var valPhoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-			var numGuests = document.getElementById("numGuest");
+			var numGuests = document.getElementById("numGuest").value;
+			
 			
 			
 			if (firstName == "" || firstName == null) 
