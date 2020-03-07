@@ -88,6 +88,9 @@
 			var phoneNumber = document.getElementById("phoneNum").value;
 			var valPhoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 			var numGuests = document.getElementById("numGuest").value;
+			var streetAd  = document.getElementById("street").value;
+			var state = document.getElementById("state").value;
+			var zipcode = document.getElementById("zipcode").value;
 			
 			
 			
@@ -118,6 +121,16 @@
 					alert("Please enter a valid phone number.")
 					return false;
 				}
+			}
+			if (numGuests == "" || numGuests == null) 
+			{
+				alert("Please enter the number of guests");
+				return false;
+			}
+			if (streetAd == "" || state == "" || zipcode == "" || streetAd == null || state == null || zipcode == null) 
+			{
+				alert("Please enter your address")
+				return false;
 			}
 		}
 	</script>
