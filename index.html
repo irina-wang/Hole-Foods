@@ -107,12 +107,19 @@
         font-weight: 500;
         font-size:25px;
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+
+    .text1 {
+        position: absolute;
+        top: 45%;
+        padding: 0 7% 0 10%;
+        font-size: 15px;
     }
    
     .line{
@@ -129,6 +136,7 @@
         text-align: center;
         margin: 8px 0;
         font-size: 12px;
+        color: gray;
         box-sizing: border-box;
     }
 
@@ -142,9 +150,9 @@
         height: 44px;
         background-color: white;
         border: 2px solid black;
-        color:black;
+        color: black;
         font-size: 12px;
-        padding: 13px 32px;
+        padding: 13px 25px;
         text-decoration: none;
         margin: 4px 2px;
     }
@@ -153,7 +161,31 @@
         background-color: black;
         border:2px solid black;
         color: white;
-        padding: 13px 32px;
+        padding: 13px 25px;
+        text-decoration: none;
+        margin: 4px 2px;
+    }
+
+    .overlay_button input[type=button] {
+        position: absolute;
+        top: 72%;
+        left: 10%;
+        width: 125px;
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        font-size: 12px;
+        padding: 5px 10px;
+        text-decoration: none;
+        margin: 4px 2px;
+    }
+
+    .overlay_button input[type=button]:hover{
+        background-color: black;
+        border:2px solid black;
+        color: white;
+        padding: 5px 10px;
         text-decoration: none;
         margin: 4px 2px;
     }
@@ -205,7 +237,7 @@
 <div style="height:875px;">
     <div class="intro" style="text-align: center; padding:20px;">
         <h2 style="font-size: 50px;">It's Donut Time! </h2>
-        <div class="catchline"><a href="menu.html" style="text-decoration: none"> See our unique collections</a></div><br/>
+        <input type="button" value="See our unique collections" style="width: 200px">
     </div>
 
     <div class="line">
@@ -214,18 +246,22 @@
 
     <div class="row">
         <div id="col1" class="col">
-            <div class="img" style="margin-right:2%;margin-left:7.5%;">
-                <img src = "cafe.jpg" alt = "left_img" >
+            <div class="img" style="margin-right:3%;margin-left:6%;">
+                <img src = "donut_front.jpg" alt = "left_img" >
                 <div class="overlay">
-                    <div class="text">Brand Story</div>
+                    <div class="text">OUR DONUTS</div>
+                    <div class="text1">At Hole Foods, we strive to create a wholesome and fulfilling experience when others taste our fluffy and  rich donuts.</div>
+                    <div class="overlay_button"><input type="button" value="Learn More"></div>
                 </div>
             </div>
         </div>
         <div id="col2" class="col">
             <div class="img" style="margin-right:7.5%;margin-left:2%;">
-                <img src = "cover.jpg" alt = "right_img" >
+                <img src = "cafe.jpg" alt = "right_img" >
                 <div class="overlay">
-                    <div class="text">Brand Story</div>
+                    <div class="text">VISIT US</div>
+                    <div class="text1">Come visit us in Medford at 161 College Ave. Open from Monday-Sunday / 7:00AM - 6:00PM.</div>
+                    <div class="overlay_button"><input type="button" value="Locations"></div>
                 </div>
             </div>
         </div>
@@ -240,7 +276,7 @@
         <h1 style="padding-top: 12px;padding-bottom: 0px;">Be the first to know about our latest promotions and new releases</h1>
 
         <form>
-            <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input> <br/>
+            <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input><br/>
             <script>
                 function erase(){
                     document.getElementById("email").value = "";
@@ -261,9 +297,9 @@
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
 <footer class="foot">
     <center><img id="foot_logo" src="footer.png" alt="logo"></center>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#"><i class="fa fa-yelp"></i></a>
-    <a href="#" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/ilikedonutsargentina/?__tn__=%2Cd%2CP-R&eid=ARAkOxptti1jG3B3ZlPfKr1C8SH4v-Z6FfgWT8h88eKMyDHRj_tHpj1nLGXbOUu7IeuBG-WXAsy0cquA" class="fa fa-facebook"></a>
+    <a href="https://www.yelp.com/biz/kanes-donuts-boston?osq=donuts"><i class="fa fa-yelp"></i></a>
+    <a href="https://www.instagram.com/donuts/" class="fa fa-instagram"></a>
     <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
     <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
 </footer>
