@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MUST INCLUDE -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="sheet.css">
+<link rel="icon" href="logo.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hole Foods</title>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="menu.js"></script>
+<!----------------->
+
+<!-- STYLING FOR MENU + MERCH -->
+<style type = "text/css">
+
+.grid {
+	background-color: #fff;
+	border: 10px solid #f5cbde;
+	color: white;
+	padding: 1rem;
+	height: 17em;
+}
+
+.parentcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.image{
+	width: 100%;
+/*	align-self: center;
+  	justify-self: center;*/
+	/*display: block;*/
+}
+
+.pagetitle {
+	width: 20%;
+}
+
+.donutname {
+	font-size: 22px;
+	text-align: center;
+}
+
+.colorbuttons {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+</style>
+
+<!------------------------------>
+
+</head>
+
+<body>
+<!-- CODE FOR HEADER AND MENU -->
+<span class="header">
+    <img class="menu-ham" src="hamburger.png">
+    <center><img src="logo.png" id="logo" alt="logo"></center>
+    <center><h1>feel whole again</h1></center>
+</span>
+
+<div class="menu">
+    <div class="close-menu">
+        <img src="close.png">
+    </div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+        <li><a href="location.html">LOCATION</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+
+<nav class="container navbar">
+    <span class="page"><a href="index.html"class="disabled">HOME</a></span>
+    <span class="page"><a href="about.html"class="disabled">ABOUT</a></span>
+    <span class="page"><a href="menu.html"class="disabled">MENU</a></span>
+    <span class="page"><a href="catering.html"class="disabled">CATERING</a></span>
+    <span class="page"><a href="location.html"class="disabled">LOCATION</a></span>
+    <span class="page"><a href="shop.html"class="disabled">SHOP</a></span>
+    <span class="page"><a href="contact.html"class="disabled">CONTACT</a></span>
+</nav>
+<!-------------------------------->
+
+
+<!-- CODE FOR MENU + MERCH  -->
+
+<center><img class = "pagetitle" src="titletemplate.png"></center>
+</br>
+
+<div class = "parentcontainer">
+	<div class = "grid"> 
+		<img class = "image" name = "firstmerch" id = "croppedhoodie" src = "merchimages/croppedhoodiepink.jpeg">
+		<div class = "colorbuttons">
+			<button onclick = "changeHoodie('black')"> Black </button>
+			<button onclick = "changeHoodie('navy')"> Navy </button>
+			<button onclick = "changeHoodie('white')"> White </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "secondmerch" id = "sweatshirt" src = "merchimages/sweatshirtblack.jpeg">
+		<div class = "colorbuttons">
+			<button onclick = "changeSweatShirt('black')"> Black </button>
+			<button onclick = "changeSweatShirt('blue')"> Blue </button>
+			<button onclick = "changeSweatShirt('pink')"> Pink </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "thirdmerch" id = "hat" src = "merchimages/capivory.jpeg">
+		<div class = "colorbuttons">
+			<button onclick = "changeHat('ivory')"> Ivory </button>
+			<button onclick = "changeHat('blue')"> Blue </button>
+			<button onclick = "changeHat('yellow')"> Yellow </button>
+			<button onclick = "changeHat('pink')"> Pink </button>
+			<button onclick = "changeHat('bucket')"> Bucket </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "fourthmerch" id = "sticker" src = "merchimages/stickerpink.jpeg">
+		<div class = "colorbuttons">
+			<button onclick = "changeSticker('white')"> White </button>
+			<button onclick = "changeSticker('navy')"> Navy </button>
+			<button onclick = "changeSticker('pink')"> Pink </button>
+		</div>
+	</div>
+</div>
+
+</br>
+
+<script type="text/javascript">
+	
+function changeHoodie(color)
+{
+	if ( color == "black" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodiepink.jpeg";
+	else if (color == "navy" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodienavy.jpeg";
+	else if ( color == "white" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodiewhite.jpeg";
+}
+
+function changeSweatShirt(color)
+{
+	if ( color == "black" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtblack.jpeg";
+	else if (color == "blue" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtblue.jpeg";
+	else if ( color == "pink" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtpink.jpeg";
+
+}
+
+function changeHat(color)
+{
+	if ( color == "ivory" )
+		document.getElementById("hat").src = "merchimages/capivory.jpeg";
+	else if (color == "blue" )
+		document.getElementById("hat").src = "merchimages/capblue.jpeg";
+	else if ( color == "yellow" )
+		document.getElementById("hat").src = "merchimages/capyel.jpeg";
+	else if (color == "pink" )
+		document.getElementById("hat").src = "merchimages/cappink.jpeg";
+	else if (color == "bucket" )
+		document.getElementById("hat").src = "merchimages/buckethatwhite.jpeg";
+
+}
+
+
+function changeSticker(color)
+{
+	if ( color == "white" )
+		document.getElementById("sticker").src = "merchimages/stickerwhite.jpeg";
+	else if (color == "navy" )
+		document.getElementById("sticker").src = "merchimages/stickernavy.jpeg";
+	else if ( color == "pink" )
+		document.getElementById("sticker").src = "merchimages/stickerpink.jpeg";
+
+}
+
+
+</script>
+
+
+
+<!-- MUST INCLUDE - CODE FOR FOOTER  -->
+<footer class="foot">
+    <center><img id="foot_logo" src="footer.png" alt="logo"></center>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#"><i class="fa fa-yelp"></i></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
+    <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
+</footer>
+<!--------------------------------------->
+
+</body>
+</html>
