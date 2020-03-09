@@ -14,6 +14,64 @@
         crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="menu.js"></script>
+	
+<style>
+	*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row{
+	padding-left: 30px;	
+}
+.column {
+  float: left;
+  width: 18%;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 16px 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+
 </head>
 
 <body>
@@ -75,7 +133,74 @@
 	
 	<br><br><br><br>
 
+	<h2 style="text-align:center">MEET THE TEAM</h2>
 	
+	<div class="row">
+		<div class="column">
+		  <div class="card">
+			<img src="anju.jpg" alt="Anju" style="width:100%">
+			<div class="container">
+			  <h2>Anju Ishizaki</h2>
+			  <p class="title">Designer</p>
+			  <p>Some text that describes </p>
+			  <p>anju.ishizaki@tufts.edu</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<img src="cindy.jpg" alt="Cindy" style="width:100%">
+			<div class="container">
+			  <h2>Cindy Siu</h2>
+			  <p class="title">Designer</p>
+			  <p>Some text that describes </p>
+			  <p>cindy.siu@tufts.edu</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="column">
+		  <div class="card">
+			<img src="irina.jpg" alt="Irina" style="width:100%">
+			<div class="container">
+			  <h2>Irina Wang</h2>
+			  <p class="title">Designer</p>
+			  <p>Some text that describes </p>
+			  <p>irina.wang@tufts.edu</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="column">
+		  <div class="card">
+			<img src="mio.jpg" alt="Mio" style="width:100%">
+			<div class="container">
+			  <h2>Mio Shimizu</h2>
+			  <p class="title">Designer</p>
+			  <p>Some text that describes </p>
+			  <p>mio.shimizu@tufts.edu</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="column">
+		  <div class="card">
+			<img src="rujen.jpg" alt="Rujen" style="width:100%">
+			<div class="container">
+			  <h2>Rujen Amatya</h2>
+			  <p class="title">Designer</p>
+			  <p>Soccer player, Traveller </p>
+			  <p>rujen.amatya@tufts.edu</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	
 	
 
