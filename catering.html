@@ -56,7 +56,16 @@
 	<!---------------------------------------------------------------------------->
 	
 	<style>
-	
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
 		
 		input[type=submit] {
 			background-color: white;
@@ -76,12 +85,18 @@
 			margin: 4px 2px;
 		}
 		
-		
+		.containers {
+		  border-radius: 5px;
+		  padding: 20px;
+		  width: 40%;
+		  margin: auto
+		}
 	</style>
+	
 	
 	<div class="sqs-block-content">
 		<img src = "cateringIMG.jpg" style="float: left; padding: 50px" width="50%"> <br><br>
-		<div id="form_wrap" style="text-align: center">
+		<div class="containers" style="text-align: center">
 			<form style="display: inline-block; text-align: left" onSubmit="return validateForm();">
 				<p>First Name: <input type="text"  id='fname' placeholder = "First Name"/></p>
 				<p>Last Name: <input type="text"  id='lname' placeholder = "Last Name"/></p>
@@ -162,7 +177,6 @@
 			}
 		}
 	</script>
-	
 	
 	<!-----------------------Footer--------------------------->
     <footer class="foot">
