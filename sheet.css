@@ -114,6 +114,7 @@ h3 {
 
 /* ---------- FOOTER ----------- */
 .foot {
+    display: block;
     box-sizing: border-box;
     height: 200px;
     font-size: 18px;
