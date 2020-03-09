@@ -53,15 +53,21 @@
 	display: block;
 }
 
-@media screen and (max-width: 851px) {
+@media screen and (max-width: 1440px) {
+    .grid {
+    	height: 17em;
+    }
+}
+
+@media screen and (max-width: 850px) {
     .grid {
     	height: 20em;
     }
 }
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 586px) {
     .grid {
-    	height: 25em;
+    	height: 27em;
     }
 }
 
@@ -78,7 +84,86 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 20px;
 }
+
+.blackbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family:'Quicksand', sans-serif;
+
+}
+
+.blackbutton:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.bluebutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #00A2FF;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family:'Quicksand', sans-serif;
+
+}
+
+.bluebutton:hover {
+  background-color: #00A2FF;
+  color: #FFFFFF;
+}
+
+.ivorybutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFEEDD;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.ivorybutton:hover {
+  background-color: #FFEEDD;
+  color: #000000;
+}
+
+.pinkbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFAFD5;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.pinkbutton:hover {
+	background-color: #FFAFD5;
+	color: #FFFFFF;
+}
+
+.yellowbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFEF7C;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.yellowbutton:hover {
+  background-color: #FFEF7C;
+  color: #000000;
+}
+
+
+
 
 
 </style>
@@ -131,38 +216,38 @@
 	<div class = "grid"> 
 		<img class = "image" name = "firstmerch" id = "croppedhoodie" src = "merchimages/croppedhoodiepink.jpeg">
 		<div class = "colorbuttons">
-			<button onclick = "changeHoodie('black')"> Black </button>
-			<button onclick = "changeHoodie('navy')"> Navy </button>
-			<button onclick = "changeHoodie('white')"> White </button>
+			<button class = "blackbutton" onclick = "changeHoodie('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeHoodie('navy')"> Navy </button>
+			<button class = "ivorybutton" onclick = "changeHoodie('white')"> White </button>
 		</div>
 	</div>
 
 	<div class = "grid"> 
 		<img class = "image" name = "secondmerch" id = "sweatshirt" src = "merchimages/sweatshirtblack.jpeg">
 		<div class = "colorbuttons">
-			<button onclick = "changeSweatShirt('black')"> Black </button>
-			<button onclick = "changeSweatShirt('blue')"> Blue </button>
-			<button onclick = "changeSweatShirt('pink')"> Pink </button>
+			<button class = "blackbutton" onclick = "changeSweatShirt('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeSweatShirt('blue')"> Blue </button>
+			<button class = "pinkbutton" onclick = "changeSweatShirt('pink')"> Pink </button>
 		</div>
 	</div>
 
 	<div class = "grid"> 
 		<img class = "image" name = "thirdmerch" id = "hat" src = "merchimages/capivory.jpeg">
 		<div class = "colorbuttons">
-			<button onclick = "changeHat('ivory')"> Ivory </button>
-			<button onclick = "changeHat('blue')"> Blue </button>
-			<button onclick = "changeHat('yellow')"> Yellow </button>
-			<button onclick = "changeHat('pink')"> Pink </button>
-			<button onclick = "changeHat('bucket')"> Bucket </button>
+			<button class = "ivorybutton" onclick = "changeHat('ivory')"> Ivory </button>
+			<button class = "bluebutton" onclick = "changeHat('blue')"> Blue </button>
+			<button class = "yellowbutton" onclick = "changeHat('yellow')"> Yellow </button>
+			<button class = "pinkbutton" onclick = "changeHat('pink')"> Pink </button>
+			<button class = "blackbutton" onclick = "changeHat('bucket')"> Bucket </button>
 		</div>
 	</div>
 
 	<div class = "grid"> 
 		<img class = "image" name = "fourthmerch" id = "sticker" src = "merchimages/stickerpink.jpeg">
 		<div class = "colorbuttons">
-			<button onclick = "changeSticker('black')"> Black </button>
-			<button onclick = "changeSticker('navy')"> Navy </button>
-			<button onclick = "changeSticker('pink')"> Pink </button>
+			<button class = "blackbutton" onclick = "changeSticker('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeSticker('navy')"> Navy </button>
+			<button class = "pinkbutton" onclick = "changeSticker('pink')"> Pink </button>
 		</div>
 	</div>
 </div>
