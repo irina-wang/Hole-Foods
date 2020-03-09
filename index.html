@@ -17,205 +17,203 @@
 <!----------------->
 
 <style type="text/css">
+
+h2 {
+    font-size: 50px;
+}
+.cover {
+    background-image: url("homeimages/cover2.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.col {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    height: 400px;
+    max-height: 600px;
+    float:left;
+}
+
+.intro, .elist {
+    display: inline block;
+    font-family: 'Quicksand';
+    box-sizing: border-box;
+    height: 200px;
+    text-align: center;
+}
+
+.catchline a {
+    font-size: 20px;
+    color: #a6a6a6;  
+}
+
+.img {
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 90%;
+    height: 85%;
+    margin: 5%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f5cbde;
+}
+
+.img:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-weight: 500;
+    font-size:25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text1 {
+    position: absolute;
+    top: 45%;
+    padding: 0 7% 0 10%;
+    font-size: 15px;
+}
+
+.line{
+    box-sizing: border-box;
+    color:rgba(0, 0, 0, 0.979);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width:95%;
+}
+
+input[type=email] {
+    width: 250px;
+    padding: 16px 24px;
+    text-align: center;
+    margin: 8px 0;
+    font-size: 12px;
+    color: gray;
+    box-sizing: border-box;
+}
+
+input[type=email]:focus {
+    background-color:#f5cbde63;
+    border: black;
+}
+
+input[type=button] {
+    width: 150px;
+    height: 44px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 12px;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+input[type=button]:hover{
+    background-color: black;
+    border:2px solid black;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+.overlay_button input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    width: 125px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+.overlay_button input[type=button]:hover{
+    background-color: black;
+    border:2px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+@media screen and (max-width: 1000px) {
     .cover {
-        background-image: url("homeimages/cover2.jpg");
-        min-height: 500px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-    .col {
-        position: relative;
-        width: 50%;
-        box-sizing: border-box;
-        height: 400px;
-        max-height: 600px;
-        float:left;
-    }
-
-    h2 {
-        font-size: 50px;
-    }
-
-    .intro, .elist {
-        display: inline block;
-        font-family: 'Quicksand';
-        box-sizing: border-box;
-        height: 200px;
-        text-align: center;
-    }
-
-    .catchline a {
-        font-size: 20px;
-        color: #a6a6a6;  
-    }
-
-    .img {
-        display: block;
-        box-sizing: border-box;
-        overflow: hidden;
-        width: 90%;
-        height: 85%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        position: relative;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        left: 15%;
-        right: 15%;
-        width: 70%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #f5cbde;
-    }
-
-    .img:hover .overlay {
-        opacity: 1;
-    }
-
-    .text {
-        color: white;
-        font-weight: 500;
-        font-size:25px;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
+        min-height: 450px;
     }
 
     .text1 {
-        position: absolute;
-        top: 45%;
-        padding: 0 7% 0 10%;
-        font-size: 15px;
+        top: 40%;
+        font-size: 12px;
     }
-   
-    .line{
-        box-sizing: border-box;
-        color:rgba(0, 0, 0, 0.979);
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width:95%;
+}
+
+/* ------- ADJUSTMENTS --------- */
+
+@media screen and (max-width: 850px) {
+    .cover {
+        min-height: 350px;
     }
 
-    input[type=email] {
-        width: 250px;
-        padding: 16px 24px;
+    .col{
+        width:100%;
         text-align: center;
-        margin: 8px 0;
-        font-size: 12px;
-        color: gray;
-        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cover {
+        min-height: 300px;
+        background-attachment: scroll;
     }
 
-    input[type=email]:focus {
-        background-color:#f5cbde63;
-        border: black;
+    h2 {
+        font-size: 35px;
     }
+}
 
-    input[type=button] {
-        width: 150px;
-        height: 44px;
-        background-color: white;
-        border: 2px solid black;
-        color: black;
-        font-size: 12px;
-        padding: 13px 25px;
-        text-decoration: none;
-        margin: 4px 2px;
-    }
-
-    input[type=button]:hover{
-        background-color: black;
-        border:2px solid black;
-        color: white;
-        padding: 13px 25px;
-        text-decoration: none;
-        margin: 4px 2px;
+@media screen and (max-width: 500px) {
+    .cover {
+        height: 200px;
+        background-attachment: scroll;
     }
 
     .overlay_button input[type=button] {
-        position: absolute;
-        top: 72%;
-        left: 10%;
-        width: 125px;
-        height: 40px;
-        background-color: transparent;
-        border: 2px solid black;
-        color: black;
-        font-size: 12px;
-        padding: 5px 10px;
-        text-decoration: none;
-        margin: 4px 2px;
+        width: 100px;
+        top: 80%;
+        height: 30px;
     }
-
-    .overlay_button input[type=button]:hover{
-        background-color: black;
-        border:2px solid black;
-        color: white;
-        padding: 5px 10px;
-        text-decoration: none;
-        margin: 4px 2px;
-    }
-
-    @media screen and (max-width: 1000px) {
-        .cover {
-            min-height: 450px;
-        }
-
-        .text1 {
-            top: 40%;
-            font-size: 12px;
-        }
-    }
-
-    @media screen and (max-width: 850px) {
-        .cover {
-            min-height: 350px;
-        }
-
-        .col{
-            width:100%;
-          /*  padding-left: 5%;*/
-            text-align: center;
-        }
-
-
-    }
-
-    @media screen and (max-width: 650px) {
-        .cover {
-            min-height: 300px;
-            background-attachment: scroll;
-        }
-
-        h2 {
-            font-size: 35px;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .cover {
-            height: 200px;
-            background-attachment: scroll;
-        }
-
-        .overlay_button input[type=button] {
-            width: 100px;
-            top: 80%;
-            height: 30px;
-        }
-    }
+}
 }
 </style>
 </head>
@@ -266,36 +264,30 @@
         <input type="button" onclick="window.location.href = 'menu.html'" value="See our unique collections" style="width: 200px;">
     </div>
 
-    <div class="line">
-        <hr/>
-    </div>
+    <div class="line"><hr/></div>
 
-    <div class="row">
-        <div id="col1" class="col">
-            <div class="img" style="margin-left: 5%; margin-right: 5%;">
-                <img src = "homeimages/donut.jpg" alt = "left_img" >
-                <div class="overlay">
-                    <div class="text">OUR DONUTS</div>
-                    <div class="text1">At Hole Foods, we strive to create a wholesome and fulfilling experience when others taste our fluffy and  rich donuts.</div>
-                    <div class="overlay_button"><input type="button" onclick="window.location.href = 'about.html'"value="Learn More"></div>
-                </div>
+    <div id="col1" class="col">
+        <div class="img">
+            <img src = "homeimages/donut.jpg" alt = "left_img" >
+            <div class="overlay">
+                <div class="text">OUR DONUTS</div>
+                <div class="text1">At Hole Foods, we strive to create a wholesome and fulfilling experience when others taste our fluffy and  rich donuts.</div>
+                <div class="overlay_button"><input type="button" onclick="window.location.href = 'about.html'"value="Learn More"></div>
             </div>
         </div>
-        <div id="col2" class="col">
-            <div class="img" style="margin-right: 5%; margin-left: 5%;">
-                <img src = "homeimages/cafe.jpg" alt = "right_img" >
-                <div class="overlay">
-                    <div class="text">VISIT US</div>
-                    <div class="text1">Come visit us in Medford at 161 College Ave. Open from Monday-Sunday / 7:00AM - 6:00PM.</div>
-                    <div class="overlay_button"><input type="button" onclick="window.location.href = 'location.html'"value="Locations"></div>
-                </div>
+    </div>
+    <div id="col2" class="col">
+        <div class="img">
+            <img src = "homeimages/cafe.jpg" alt = "right_img" >
+            <div class="overlay">
+                <div class="text">VISIT US</div>
+                <div class="text1">Come visit us in Medford at 161 College Ave. Open from Monday-Sunday / 7:00AM - 6:00PM.</div>
+                <div class="overlay_button"><input type="button" onclick="window.location.href = 'location.html'"value="Locations"></div>
             </div>
         </div>
     </div>
     <br>
-    <div class="line">
-        <hr/>
-    </div>
+    <div class="line"><hr/></div>
 
     <div class="elist">
         <h2 style="font-size: 40px;" >JOIN OUR LIST</h2>
@@ -320,9 +312,8 @@
     </div>
 </div>
 
-<div class="line" style="margin-top: 30px;">
-    <hr/>
-</div>
+<div class="line" style="margin-top: 30px;"><hr/></div>
+
 
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
 <footer class="foot">
