@@ -26,16 +26,14 @@
         background-size: cover;
     }
 
-    .row {display: flex;}
 
     .col {
         position: relative;
         width: 50%;
-        flex: 50%;
         box-sizing: border-box;
         height: 400px;
         max-height: 600px;
-
+        float:left;
     }
 
     h2 {
@@ -53,14 +51,15 @@
         font-size: 20px;
         color: #a6a6a6;  
     }
+
     .img {
         display: block;
         box-sizing: border-box;
         overflow: hidden;
-        width: 80%;
+        width: 90%;
         height: 90%;
-        margin:5%;
-        padding-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         position: relative;
     }
 
@@ -70,7 +69,7 @@
         bottom: 10%;
         left: 15%;
         right: 15%;
-        width: 77%;
+        width: 70%;
         opacity: 0;
         transition: .5s ease;
         background-color: #f5cbde;
@@ -184,6 +183,13 @@
             min-height: 350px;
         }
 
+        .col{
+            width:100%;
+          /*  padding-left: 5%;*/
+            text-align: center;
+        }
+
+
     }
 
     @media screen and (max-width: 650px) {
@@ -266,8 +272,8 @@
 
     <div class="row">
         <div id="col1" class="col">
-            <div class="img" style="margin-right:3%;margin-left:6%;">
-                <img src = "donut_front.jpg" alt = "left_img" >
+            <div class="img" style="margin-left: 5%; margin-right: 5%;">
+                <img src = "cafe.jpg" alt = "left_img" >
                 <div class="overlay">
                     <div class="text">OUR DONUTS</div>
                     <div class="text1">At Hole Foods, we strive to create a wholesome and fulfilling experience when others taste our fluffy and  rich donuts.</div>
@@ -276,7 +282,7 @@
             </div>
         </div>
         <div id="col2" class="col">
-            <div class="img" style="margin-right:7.5%;margin-left:2%;">
+            <div class="img" style="margin-right: 5%; margin-left: 5%;">
                 <img src = "cafe.jpg" alt = "right_img" >
                 <div class="overlay">
                     <div class="text">VISIT US</div>
@@ -315,14 +321,14 @@
 </div>
 
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
-<footer class="foot">
+<div class="foot">
     <center><img id="foot_logo" src="footer.png" alt="logo"></center>
     <a href="https://www.facebook.com/ilikedonutsargentina/?__tn__=%2Cd%2CP-R&eid=ARAkOxptti1jG3B3ZlPfKr1C8SH4v-Z6FfgWT8h88eKMyDHRj_tHpj1nLGXbOUu7IeuBG-WXAsy0cquA" class="fa fa-facebook"></a>
     <a href="https://www.yelp.com/biz/kanes-donuts-boston?osq=donuts"><i class="fa fa-yelp"></i></a>
     <a href="https://www.instagram.com/donuts/" class="fa fa-instagram"></a>
     <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
     <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
-</footer>
+</div>
 <!--------------------------------------->
 
 </body>
