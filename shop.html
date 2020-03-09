@@ -25,7 +25,12 @@
 	border: 10px solid #f5cbde;
 	color: white;
 	padding: 1rem;
-	height: 17em;
+	height: 18em;
+/*	margin-left: auto;
+	margin-right: auto;
+	align-self: center;*/
+	/*justify-content: center !important;*/
+
 }
 
 .parentcontainer {
@@ -36,13 +41,28 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding-left: 35px;
   padding-right: 35px;
+
 }
 
 .image{
-	width: 100%;
-/*	align-self: center;
-  	justify-self: center;*/
-	/*display: block;*/
+	width: 90%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	/*align-self: center;*/
+  	/*justify-self: center;*/
+	display: block;
+}
+
+@media screen and (max-width: 851px) {
+    .grid {
+    	height: 20em;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .grid {
+    	height: 25em;
+    }
 }
 
 .pagetitle {
@@ -59,8 +79,6 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 
 
 </style>
@@ -142,7 +160,7 @@
 	<div class = "grid"> 
 		<img class = "image" name = "fourthmerch" id = "sticker" src = "merchimages/stickerpink.jpeg">
 		<div class = "colorbuttons">
-			<button onclick = "changeSticker('white')"> White </button>
+			<button onclick = "changeSticker('black')"> Black </button>
 			<button onclick = "changeSticker('navy')"> Navy </button>
 			<button onclick = "changeSticker('pink')"> Pink </button>
 		</div>
@@ -192,7 +210,7 @@ function changeHat(color)
 
 function changeSticker(color)
 {
-	if ( color == "white" )
+	if ( color == "black" )
 		document.getElementById("sticker").src = "merchimages/stickerwhite.jpeg";
 	else if (color == "navy" )
 		document.getElementById("sticker").src = "merchimages/stickernavy.jpeg";
