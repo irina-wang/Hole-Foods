@@ -99,35 +99,31 @@
 	</style>
 	
 	
-	<div style="text-align: center">
-		<tr>
-			<td><img src = "cateringIMG3.jpg" style="padding: 50px" width="35%"></td>
-			<td>
-				<div class="form" style="text-align: center; display: inline; width: 50%">
-					<form style="display: inline-block; text-align: left" onSubmit="return validateForm();">
-						<p>First Name: <input type="text"  id='fname' placeholder = "First Name"/></p>
-						<p>Last Name: <input type="text"  id='lname' placeholder = "Last Name"/></p>
-						<p>Email:  <input type="text"  id='email' placeholder = "xxxx@gmail.com"/></p>
-						<p>Phone number:  <input type="text"  id='phoneNum' placeholder = "xxx-xxx-xxxx"/></p>
-						<p>Number of guests: <input type="text"  id='numGuest' placeholder ="5-20"/></p>
-						<p> 
-							<input type="radio"  name="p_or_d" value = "pickup" checked="checked"/> Pickup  
-							<input type="radio"  name='p_or_d' value = 'delivery'/> Delivery
-						</p>
-						<p>Address</p>
-						<p>Street: <input type="text"  id='street' /></p>
-						<p>State: <input type="text"  id='state' /></p>
-						<p>Zipcode: <input type="text"  id='zipcode' /></p>
+	<div style="display: inline">
+		<div class= "image" style="width: 50%">
+			<img src = "cateringIMG3.jpg" style="padding: 50px" width="35%">
+		</div>
+		<div class="form" style="text-align: center; width: 50%">
+			<form style="display: inline-block; text-align: left" onSubmit="return validateForm();">
+				<p>First Name: <input type="text"  id='fname' placeholder = "First Name"/></p>
+				<p>Last Name: <input type="text"  id='lname' placeholder = "Last Name"/></p>
+				<p>Email:  <input type="text"  id='email' placeholder = "xxxx@gmail.com"/></p>
+				<p>Phone number:  <input type="text"  id='phoneNum' placeholder = "xxx-xxx-xxxx"/></p>
+				<p>Number of guests: <input type="text"  id='numGuest' placeholder ="5-20"/></p>
+				<p> 
+					<input type="radio"  name="p_or_d" value = "pickup" checked="checked"/> Pickup  
+					<input type="radio"  name='p_or_d' value = 'delivery'/> Delivery
+				</p>
+				<p>Address</p>
+				<p>Street: <input type="text"  id='street' /></p>
+				<p>State: <input type="text"  id='state' /></p>
+				<p>Zipcode: <input type="text"  id='zipcode' /></p>
 			
-						<br/>
-						<input type = "submit" value = "Submit Order">
-						<br><br>
-					</form>
-		
-				</div>
-			</td>
-		</tr>
-		
+				<br/>
+				<input type = "submit" value = "Submit Order">
+				<br><br>
+			</form>
+		</div>
 	</div>
 	
 	<script language="javascript">
