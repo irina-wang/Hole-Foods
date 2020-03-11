@@ -313,9 +313,25 @@ input[type=button]:hover{
                         return false;
                     }
                     return true;
+         <form name="myForm"  onSubmit="return submit()" method="post">
+            <input type="email" id="email" placeholder ="Email Address"></input><br/>
+            <script>
+                function submit(){
+                    event.preventDefault();
+                    var email = document.getElementById("email").value;
+                    var examine_email = /\S+@\S+\.\S+/;
+
+                    if ((phoneNumber.match(examine_email))){
+					    return true;
+				    } else {
+					    return false;
+				    }
                 }
+
             </script>
             <input type="button" value="Sign Me Up"></input>
+
+            <input type="submit" value="Sign Me Up" ></input>
         </form>
     </div>
 </div>
