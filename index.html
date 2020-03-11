@@ -293,20 +293,7 @@ input[type=button]:hover{
         <h2 style="font-size: 35px;">JOIN OUR LIST</h2>
         <h1 style="padding-top: 12px; padding-bottom: 0px; margin: 0 10px 0 10px;">Be the first to know about our latest promotions and new releases</h1>
 
-        <form name="myForm" onsubmit="return submit()" method="post">
-            <input type="email" id="email" value="Email Address" ></input>&nbsp;<br/>
-            <script>
-
-                function validateEmail(email) {
-                    var re = /\S+@\S+\.\S+/;
-                    return re.test(email);
-                }
-
-                function submit(){
-                    if(!validateEmail(document.myForm.email.value)){
-                        return false;
-                    }
-                    return true;
+        
          <form name="myForm"  onSubmit="return submit()" method="post">
             <input type="email" id="email" placeholder ="Email Address"></input><br/>
             <script>
