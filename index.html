@@ -293,8 +293,8 @@ input[type=button]:hover{
         <h2 style="font-size: 35px;">JOIN OUR LIST</h2>
         <h1 style="padding-top: 12px; padding-bottom: 0px; margin: 0 10px 0 10px;">Be the first to know about our latest promotions and new releases</h1>
 
-        <form>
-            <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input><br/>
+        <form name="myForm" onsubmit="return submit()" method="post">
+            <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input>&nbsp;<br/>
             <script>
                 function erase(){
                     document.getElementById("email").value = "";
@@ -303,11 +303,35 @@ input[type=button]:hover{
                     document.getElementById("email").value = "Email Address";
                 }
 
-                function submit(){
-                    //TO DOOOOOOOOO
+                function validateEmail(email) {
+                    var re = /\S+@\S+\.\S+/;
+                    return re.test(email);
                 }
+
+                function submit(){
+                    if(!validateEmail(document.myForm.email.value)){
+                        return false;
+                    }
+                    return true;
+         <form name="myForm"  onSubmit="return submit()" method="post">
+            <input type="email" id="email" placeholder ="Email Address"></input><br/>
+            <script>
+                function submit(){
+                    event.preventDefault();
+                    var email = document.getElementById("email").value;
+                    var examine_email = /\S+@\S+\.\S+/;
+
+                    if ((phoneNumber.match(examine_email))){
+					    return true;
+				    } else {
+					    return false;
+				    }
+                }
+
             </script>
-            <input type="button" onclick="submit()" value="Sign Me Up"></input>
+            <input type="button" value="Sign Me Up"></input>
+
+            <input type="submit" value="Sign Me Up" ></input>
         </form>
     </div>
 </div>
