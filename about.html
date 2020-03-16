@@ -20,6 +20,8 @@
   box-sizing: inherit;
 }
 h3{
+    box-sizing: border-box;
+    height: 40px;
     font-size: 22px;
 }
 .row{
@@ -35,13 +37,6 @@ h3{
   
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 90%;
-    padding-left: 5%;
-    padding-left: 5%;
-  }
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -61,7 +56,18 @@ h3{
 }
 
 .title {
+  box-sizing: border-box;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: grey;
+}
+
+.description {
+    box-sizing: border-box;
+    height: 40px;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 .button {
@@ -82,7 +88,28 @@ h3{
 }
     
 .emails{
+    box-sizing: border-box;
+    height: 50px;
     word-break: break-word;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 90%;
+    padding-left: 5%;
+    padding-left: 5%;
+  }
+
+  .title {
+      margin: 0;
+      height: 30px;
+  }
+
+  .description {
+      margin: 0;
+      height: 30px;
+  }
+
 }
 </style>
 
@@ -151,9 +178,9 @@ h3{
           <div class="card">
             <img src="aboutimages/anju.png" alt="Anju" style="width:100%">
             <div class="container">
-              <h3>Anju Ishizaki</h2>
+              <h3>Anju Ishizaki</h3>
               <p class="title">Menu & Shop page</p>
-              <p> Avid food eater </p>
+              <p class="description"> Avid food eater </p>
               <p class = "emails">anju.ishizaki@tufts.edu</p>
               <a href="https://www.linkedin.com/in/anju-ishizaki-320b68143/" target="_blank"><p><button class="button">Contact
               </button></p></a>
@@ -165,9 +192,9 @@ h3{
           <div class="card">
             <img src="aboutimages/cindy.jpg" alt="Cindy" style="width:100%">
             <div class="container">
-              <h3>Cindy Siu</h2>
+              <h3>Cindy Siu</h3>
               <p class="title">Home page</p>
-              <p> Artist </p>
+              <p class="description"> Artist </p>
               <p class = "emails">cindy.siu@tufts.edu</p>
               <a href="https://www.linkedin.com/in/cindy-siu-654690171/" target="_blank"><p><button class="button">Contact
   
@@ -181,9 +208,9 @@ h3{
           <div class="card">
             <img src="aboutimages/irina.jpg" alt="Irina" style="width:100%">
             <div class="container">
-              <h3>Irina Wang</h2>
+              <h3>Irina Wang</h3>
               <p class="title">Home page</p>
-              <p> Photographer </p>
+              <p class="description"> Photographer </p>
               <p class = "emails">irina.wang@tufts.edu</p>
               <a href="https://www.linkedin.com/in/mengqi-irina-wang-2290bb153/" target="_blank"><p><button class="button">Contact
               </button></p></a>
@@ -195,9 +222,9 @@ h3{
           <div class="card">
             <img src="aboutimages/mio.jpg" alt="Mio" style="width:100%">
             <div class="container">
-              <h3>Mio Shimizu</h2>
+              <h3>Mio Shimizu</h3>
               <p class="title">Catering & Location page</p>
-              <p>Traveller</p>
+              <p class="description">Traveller</p>
               <p class = "emails">mio.shimizu@tufts.edu</p>
               <a href="https://www.linkedin.com/in/mio-shimizu-92a6b019a/" target="_blank"><p><button class="button">Contact
               </button></p></a>
@@ -209,9 +236,9 @@ h3{
           <div class="card">
             <img src="aboutimages/rujen.jpg" alt="Rujen" style="width:100%">
             <div class="container">
-              <h3>Rujen Amatya</h2>
+              <h3>Rujen Amatya</h3>
               <p class="title"> About & Contact Us page </p>
-              <p> Soccer player </p>
+              <p class="description"> Soccer player </p>
               <p class = "emails">rujen.amatya@tufts.edu</p>
                <a href="https://www.linkedin.com/in/rujen-amatya-092074140/" target="_blank"><p><button class="button">Contact
               </button></p></a>
