@@ -157,6 +157,11 @@ h3 {
 
 @media screen and (max-width: 686px)
 {
+    .header #logo:hover {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
     .close-menu {
         position: absolute;
         right: 25px;
