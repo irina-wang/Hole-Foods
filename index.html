@@ -301,7 +301,7 @@ input[type=submit],input[type=button]:hover{
                 var examine_email =/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
              //   if (email.search("@") != -1 && email.search("."))
-                if ((email.match(examine_email))){
+                if (examine_email){
                     alert("valid email");
                     return true;
                 } else {
