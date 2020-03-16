@@ -292,25 +292,22 @@ input[type=submit],input[type=button]:hover{
     <div class="elist">
         <h2 style="font-size: 35px;">JOIN OUR LIST</h2>
         <h1 style="padding-top: 12px; padding-bottom: 0px; margin: 0 10px 0 10px;">Be the first to know about our latest promotions and new releases</h1>
-
-        <script>
-            function submit(){
-                event.preventDefault();
-                var email = document.getElementById("email").value;
-                // var examine_email = /\S+@\S+\.\S+/;
-                var examine_email =/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-             //   if (email.search("@") != -1 && email.search("."))
-                if (examine_email){
-                    returm true;
-                } else {
-                    return false;
-                }
-            }
-        </script>
         
          <form name="myForm" onSubmit="return submit()">
             <input type="email" id="email" placeholder ="Email Address"></input><br/>
+            <script>
+                function submit(){
+                    event.preventDefault();
+                    var email = document.getElementById("email").value;
+                    var examine_email =/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+                    if (examine_email){
+                        returm true;
+                    } else {
+                        return false;
+                    }
+                }
+            </script>
             <input type="submit" value="Sign Me Up" ></input>
         </form>
     </div>
