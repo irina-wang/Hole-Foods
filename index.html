@@ -293,7 +293,7 @@ input[type=submit],input[type=button]:hover{
         <h2 style="font-size: 35px;">JOIN OUR LIST</h2>
         <h1 style="padding-top: 12px; padding-bottom: 0px; margin: 0 10px 0 10px;">Be the first to know about our latest promotions and new releases</h1>
         
-         <form name="myForm"  onSubmit="return submit()" method="post">
+         <form name="myForm" onSubmit="return submit()" method="post">
             <input type="email" id="email" placeholder ="Email Address"></input><br/>
             <script>
                 function submit(){
@@ -301,13 +301,12 @@ input[type=submit],input[type=button]:hover{
                     var email = document.getElementById("email").value;
                     var examine_email = /\S+@\S+\.\S+/;
 
-                    if ((phoneNumber.match(examine_email))){
+                    if ((email.match(examine_email))){
 					    return true;
 				    } else {
 					    return false;
 				    }
                 }
-
             </script>
             <input type="submit" value="Sign Me Up" ></input>
         </form>
