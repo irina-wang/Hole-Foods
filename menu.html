@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="sheet.css">
+<link rel="icon" href="fixed_elem/logo.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hole Foods</title>
@@ -21,13 +22,11 @@
 /** { 
 	box-sizing: border-box;
 }
-
 .row::after {
 content: "";
 clear: both;
 display: table;
 }
-
 .gridlayout {
 	display: grid;
 	border: solid;
@@ -53,10 +52,10 @@ display: table;
 }*/
 
 .grid {
-background-color: dodgerblue;
-  color: white;
-  padding: 1rem;
-  height: auto;
+	background-color: #fff;
+	color: white;
+	padding: 1rem;
+	height: 21em;
 }
 
 .parentcontainer {
@@ -67,6 +66,48 @@ background-color: dodgerblue;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.flipbox {
+  background-color: transparent;
+  width: auto;
+}
+
+.flipbox-inside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: transparent;
+  width: auto;
+}
+
+.flipbox:hover .flipbox-inside {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #bbb;
+  color: black;
+}
+
+.back {
+  background-color: #2980b9;
+  color: black;
+  transform: rotateY(180deg);
+
+}
+
+
 .image{
 	width: 100%;
 /*	align-self: center;
@@ -76,6 +117,15 @@ background-color: dodgerblue;
 
 .pagetitle {
 	width: 20%;
+}
+
+.donutname {
+	font-size: 22px;
+	text-align: center;
+}
+
+.backtext {
+	font-weight: bold;
 }
 
 
@@ -89,14 +139,14 @@ background-color: dodgerblue;
 <body>
 <!-- CODE FOR HEADER AND MENU -->
 <span class="header">
-    <img class="menu-ham" src="hamburger.png">
-    <center><img src="logo.png" id="logo" alt="logo"></center>
+    <img class="menu-ham" src="fixed_elem/hamburger.png">
+    <center><a href="index.html"><img src="fixed_elem/logo.png" id="logo" alt="logo"></a></center>
     <center><h1>feel whole again</h1></center>
 </span>
 
 <div class="menu">
     <div class="close-menu">
-        <img src="close.png">
+        <img src="fixed_elem/close.png">
     </div>
     <ul>
         <li><a href="index.html">HOME</a></li>
@@ -123,105 +173,468 @@ background-color: dodgerblue;
 
 <!-- CODE FOR MENU + MERCH  -->
 
-<center><img class = "pagetitle" src="titletemplate.png"></center>
+<!-- <center><img class = "pagetitle" src="titletemplate.png"></center> -->
+<h2 style="text-align:center;white-space:pre-wrap;">MENU</h2>
 </br>
 
 <div class = "parentcontainer">
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/simpleglazed.png">
+					<div class = "donutname"> Simple Glazed </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Simple Glazed </div>
+					<p> Our original and most popular doughnut. Light dough with a crispy sweet glaze. Perfect with your morning coffee. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.00 </p>
+					</br>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/chocoring.png">
+					<div class = "donutname"> Chocolate Ring </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Chocolate Ring </div>
+					<p> Simple yet delicious chocolate ring doughnut. Light dough dipped in smooth and delectable chocolate icing. </p>
+					</br>
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.20 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/chocosprinkle.png">
+					<div class = "donutname"> Chocolate Sprinkle </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Chocolate Sprinkle </div>
+					<p> Simple chocolate doughnut topped with amazing colorful sprinkles. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.30 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/chococustard.png">
+					<div class = "donutname"> Chocolate Custard </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Chocolate Custard </div>
+					<p> Doughnut covered in rich chocolate icing and filled with creamy custard. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $2.00 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/ichigoring.png">
+					<div class = "donutname"> Strawberry Ring </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Strawberry Ring </div>
+					<p> Light dough dipped in a pretty pink strawberry icing. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.20 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/ichigosprinkle.png">
+					<div class = "donutname"> Strawberry Sprinkle </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Strawberry Sprinkle </div>
+					<p> Simple doughnut dipped in strawberry icing and topped with colorful rainbow sprinkles. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.30 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/cinnamonsugar.png">
+					<div class = "donutname"> Cinnamon Sugar </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Cinnamon Sugar </div>
+					<p> Simple treat tossed in cinnamon sugar. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.10 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/caramelwalnut.png">
+					<div class = "donutname"> Caramel Walnut </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Caramel Walnut </div>
+					<p> Dipped in a caramel truffle icing and filled with smooth caramel filling. Drizzled with dark chocolate with topped with walnuts.  </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg, Tree Nuts</p>
+					<p> Price: $2.00 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/cookiescreme.png">
+					<div class = "donutname"> Cookies n' Creme </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Cookies n' Creme </div>
+					<p> Orignal doughnut topped with a bed of vanilla creme and oreo biscuits. Drizzled with white chocolate. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/mintchoco.png">
+					<div class = "donutname"> Mint Chocolate </div> 
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Mint Chocolate </div>
+					<p> Our personal favorite! White chocolate filled doughnut topped with dark mint chocolate icing. Dizzled with green icing and chocolate chips. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $2.00 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/tiramisu.png">
+					<div class = "donutname">Tiramisu </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Tiramisu </div>
+					<p> Filled with tiramisu flavored filling, and dipped into coffee flavored icing. Dusted with chocolate flakes and drizzled with dark chocolate ganache. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg, Sulphites </p>
+					<p> Price: $2.00 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/oldf.png">
+					<div class = "donutname"> Old Fashion </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Old Fashion </div>
+					<p> Rich and dense cake doughnut. Simple yet a classic, loved by all ages.  </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.50 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/oldfhoney.png">
+					<div class = "donutname"> Old Fashion Honey </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Old Fashion Honey </div>
+					<p> Moist cake doughnut dipped in original sweet honey glaze. Even Winnie the Pooh comes in for this treat. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.80 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/oldfchoco.png">
+					<div class = "donutname"> Old Fashion Chocolate </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Old Fashion Chocolate </div>
+					<p> Our old fashion doughnut dripped in a delicate chocolate icing.  </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/oldfgreentea.png">
+					<div class = "donutname"> Old Fashion Matcha </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Old Fashion Matcha </div>
+					<p> Green tea old fashion doughnut dipped in more green tea chocolate. Semi-sweet treat loved from all. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $2.00 </p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class = "grid"> 
-		<center><img class = "image" src = "Donut1.jpg"></center>
-		<center>Name of Donut</center>
-
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/pondering.png">
+					<div class = "donutname"> Mochi Original </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Old Fashion </div>
+					<p> Mochi doughnuts are a hybrid of traditional American doughnuts and Japanese mochi. Enjoy this chewy and sweet donut!  </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.50 </p>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/ponderingsugar.png">
+					<div class = "donutname">Mochi Black Sugar </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Mochi Black Sugar </div>
+					<p> Original mochi doughnut covered with our sweet black sugar blend. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/ponderingichigo.png">
+					<div class = "donutname"> Mochi Strawberry </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Mochi Strawberry </div>
+					<p> Our mochi doughnut topped with tangy strawberry glaze. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.90 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/ponderingmatcha.png">
+					<div class = "donutname"> Mochi Matcha </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Mochi Matcha </div>
+					<p> Our mochi doughnut topped with semi-sweet matcha green tea chocolate glaze. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.90 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/french.png">
+					<div class = "donutname"> French Cruller </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> French Cruller </div>
+					<p> Rich and light cake cut doughnut topped with a thin coat of sugar. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.50 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/frenchchoco.png">
+					<div class = "donutname"> Chocolate French Cruller </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Chocolate French Cruller </div>
+					<p> Our original french cruller doughnut dipped in chocolate icing. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/frenchichigo.png">
+					<div class = "donutname"> Strawberry French Cruller </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Strawberry French Cruller </div>
+					<p> Our original french cruller doughnut dipped in a tangy strawberry chocolate glaze. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/frenchmatcha.png">
+					<div class = "donutname"> Matcha French Cruller </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Matcha French Cruller </div>
+					<p> Our original french cruller doughnut dipped in a semi-sweet matcha green tea chocolate glaze. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.60 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<div class = "flipbox">
+			<div class = "flipbox-inside">
+				<div class = "front">
+					<img class = "image" src = "donutimages/frenchsakura.png">
+					<div class = "donutname"> Sakura French Cruller </div>
+				</div>
+				<div class = "back">
+					<div class = "backtext"> Sakura French Cruller </div>
+					<p> Our original french cruller doughnut coated in a sweet sakura cherry blossom glaze. Enjoy the Japanese sakura cherry scent under the spring breeze. </p>
+					</br>
+					
+					<p> Allergens: Wheat, Soy, Milk, Egg </p>
+					<p> Price: $1.80 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </div>
 
 </br>
@@ -232,10 +645,10 @@ background-color: dodgerblue;
 
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
 <footer class="foot">
-    <center><img id="foot_logo" src="footer.png" alt="logo"></center>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#"><i class="fa fa-yelp"></i></a>
-    <a href="#" class="fa fa-instagram"></a>
+    <center><img id="foot_logo" src="fixed_elem/footer.png" alt="logo"></center>
+    <a href="https://www.facebook.com/ilikedonutsargentina/?__tn__=%2Cd%2CP-R&eid=ARAkOxptti1jG3B3ZlPfKr1C8SH4v-Z6FfgWT8h88eKMyDHRj_tHpj1nLGXbOUu7IeuBG-WXAsy0cquA" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.yelp.com/biz/kanes-donuts-boston?osq=donuts" class="fa fa-yelp" target="_blank"></a>
+    <a href="https://www.instagram.com/donuts/" class="fa fa-instagram" target="_blank"></a>
     <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
     <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
 </footer>
@@ -243,6 +656,3 @@ background-color: dodgerblue;
 
 </body>
 </html>
-
-
-

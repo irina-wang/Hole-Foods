@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="sheet.css">
-
+<link rel="icon" href="fixed_elem/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hole Foods</title>
 
@@ -17,215 +17,208 @@
 <!----------------->
 
 <style type="text/css">
-    .h1{
-        font-size: 20px;
-        font-family: monospace;
-    }
-    .cover {
-        background-image: url("cover2.jpg");
-        min-height: 500px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
-    @media screen and (max-width: 1000px) {
-        .cover {
-            min-height: 450px;
-        }
-    }
-
-    @media screen and (max-width: 850px) {
-        .cover {
-            min-height: 350px;
-        }
-    }
-
-    @media screen and (max-width: 650px) {
-        .cover {
-            min-height: 300px;
-            background-attachment: scroll;
-        }
-    }
-
-    @media screen and (max-width: 475px) {
-        .cover {
-            height: 200px;
-            background-attachment: scroll;
-        }
-
-    }
-    .row {display: flex;}
-
-    .col {
-        position: relative;
-        width: 50%;
-        flex: 50%;
-        box-sizing: border-box;
-        height: 400px;
-        max-height: 600px;
-
-    }
-
-    .intro, .elist {
-        font-family: 'Quicksand';
-        box-sizing: border-box;
-        height: 200px;
-        text-align: center;
-    }
-
-    .img {
-        display: block;
-        box-sizing: border-box;
-        overflow: hidden;
-        width: 90%;
-        height: 80%;
-        margin:5%;
-        position: absolute;
+h2 {
+    font-size: 50px;
+}
+.cover {
+    background-image: url("homeimages/cover2.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
-    }
+.col {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    height: 400px;
+    max-height: 600px;
+    float:left;
+}
 
-    .overlay {
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        left: 10%;
-        right: 10%;
-        width: 80%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #f5cbde;
-    }
+.intro, .elist {
+    display: inline block;
+    font-family: 'Quicksand';
+    box-sizing: border-box;
+    height: 200px;
+    text-align: center;
+}
 
-    .img:hover .overlay {
-        opacity: 1;
-    }
+.catchline a {
+    font-size: 20px;
+    color: #a6a6a6;  
+}
 
-    .text {
-        color: white;
-        font-weight: 500;
-        font-size:25px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-   
-    .line{
-        box-sizing: border-box;
-        color:rgba(0, 0, 0, 0.979);
-        padding-left: 2.5%;
-        width:95%;
-    }
-
-    input[type=email] {
-        width: 200px;
-        padding: 16px 32px;
-        margin: 8px 0;
-        box-sizing: border-box;
-    }
-
-    input[type=email]:focus {
-        background-color:#f5cbde63;
-        border: black;
-    }
-
-    input[type=button] {
-        background-color: white;
-        border:2px solid black;
-        color:black;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-    }
-
-    input[type=button]:hover{
-        background-color: black;
-        border:2px solid black;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-    }
-
-    }
-
-    
+.img {
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 90%;
+    height: 85%;
+    margin: 5%;
+    position: relative;
+}
 
 .overlay {
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(209, 117, 80);
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f5cbde;
 }
 
 .img:hover .overlay {
-  opacity: 0.8;
+    opacity: 1;
 }
 
 .text {
-  color: white;
-  font-size:25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size:25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-   
+
+.text1 {
+    position: absolute;
+    top: 45%;
+    padding: 0 7% 0 10%;
+    font-size: 15px;
+}
+
 .line{
     box-sizing: border-box;
-    color:rgba(197, 16, 16, 0.979);
-    padding-left: 2.5%;
+    color:rgba(0, 0, 0, 0.979);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     width:95%;
 }
 
 input[type=email] {
-  width: 20%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+    width: 250px;
+    padding: 16px 24px;
+    text-align: center;
+    margin: 8px 0;
+    font-size: 12px;
+    color: gray;
+    box-sizing: border-box;
 }
 
 input[type=email]:focus {
-  background-color: rgb(255, 255, 255);
-border: black;
+    background-color:#f5cbde63;
+    border: black;
 }
 
-input[type=button] {
-  background-color: white;
-  border:2px solid black;
-  color:black;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  flex-wrap: wrap;
-
+input[type=submit], input[type=button] {
+    width: 150px;
+    height: 44px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 12px;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
 }
 
-input[type=button]:hover{
-  background-color: black;
-  border:2px solid black;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  flex-wrap: wrap;
+input[type=submit],input[type=button]:hover{
+    background-color: black;
+    border:2px solid black;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
 }
-  
+
+.overlay_button input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    width: 125px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+.overlay_button input[type=button]:hover{
+    background-color: black;
+    border:2px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cover {
+        min-height: 450px;
+    }
+
+    .text1 {
+        top: 40%;
+        font-size: 12px;
+    }
+}
+
+/* ------- ADJUSTMENTS --------- */
+
+@media screen and (max-width: 850px) {
+    .cover {
+        min-height: 350px;
+    }
+
+    .col{
+        width:100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cover {
+        min-height: 300px;
+        background-attachment: scroll;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .overlay {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cover {
+        height: 200px;
+        background-attachment: scroll;
+    }
+
+    .overlay_button input[type=button] {
+        width: 100px;
+        top: 80%;
+        height: 30px;
+    }
+}
+}
 </style>
 </head>
 
@@ -238,14 +231,14 @@ input[type=button]:hover{
 <div id="bottom"></div>
 
 <span class="header">
-    <img class="menu-ham" src="hamburger.png">
-    <center><img src="logo.png" id="logo" alt="logo"></center>
+    <img class="menu-ham" src="fixed_elem/hamburger.png">
+    <center><a href="index.html"><img src="fixed_elem/logo.png" id="logo" alt="logo"></a></center>
     <center><h1>feel whole again</h1></center>
 </span>
 
 <div class="menu">
     <div class="close-menu">
-        <img src="close.png">
+        <img src="fixed_elem/close.png">
     </div>
     <ul>
         <li><a href="index.html">HOME</a></li>
@@ -269,70 +262,70 @@ input[type=button]:hover{
 </nav>
 <!-------------------------------->
 
-<a href="index.html"><div class="cover"></div></a>
-<div style="height:900px;">
-    <div class="intro" style="text-align: center; padding:20px;">
-        <h2 style="font-size: 50px;">It's Donut Time! </h2>
-        <h1><a href="menu.html">>>> See our unique collections</a></h1> <br/>
-        <h3><a href="menu.html">>>> See our unique collections</a></h3> <br/>
+<div class="cover"></div>
+    <div class="intro" style="text-align: center; padding:20px;" >
+        <h2>It's Donut Time! </h2>
+        <input type="button" onclick="window.location.href = 'menu.html'" value="See our unique collections" style="width: 200px;">
     </div>
 
-    <div class="line">
-        <hr/>
-    </div>
+    <div class="line"><hr/></div>
 
-    <div class="row">
-        <div id="col1" class="col">
-            <div class="img" style="margin-right:2.5%;margin-left:7.5%;">
-                <img src = "cover.jpg" alt = "left_img" >
-                <div class="overlay">
-                    <div class="text">Brand Story</div>
-                </div>
-            </div>
-        </div>
-        <div id="col2" class="col">
-            <div class="img" style="margin-right:7.5%;margin-left:2.5%;">
-                <img src = "cover.jpg" alt = "right_img" >
-                <div class="overlay">
-                    <div class="text">Brand Story</div>
-                </div>
+    <div id="col1" class="col">
+        <div class="img">
+            <img src = "homeimages/donut.jpg" alt = "left_img" >
+            <div class="overlay">
+                <div class="text">OUR DONUTS</div>
+                <div class="text1">At Hole Foods, we strive to create a wholesome and fulfilling experience when others taste our fluffy and  rich donuts.</div>
+                <div class="overlay_button"><input type="button" onclick="window.location.href = 'about.html'"value="Learn More"></div>
             </div>
         </div>
     </div>
-
-    <div class="line">
-        <hr/>
+    <div id="col2" class="col">
+        <div class="img">
+            <img src = "homeimages/cafe.jpg" alt = "right_img" >
+            <div class="overlay">
+                <div class="text">VISIT US</div>
+                <div class="text1">Come visit us in Medford at 161 College Ave. Open from Monday-Sunday / 7:00AM - 6:00PM.</div>
+                <div class="overlay_button"><input type="button" onclick="window.location.href = 'location.html'"value="Locations"></div>
+            </div>
+        </div>
     </div>
+    <br>
+    <div class="line"><hr/></div>
+
     <div class="elist">
-        <h2 >JOIN OUR LIST</h2>
-        <h1 style="padding-top: 10px;padding-bottom: 0px;">Be the first to know about our latest promotions and new releases</h1>
-        <h3>Be the first to know about our latest promotions and new releases</h3>
-
-        <form>
-            <input type="email" id="email" value="Email Address" onblur="prompt()" onclick="erase()"></input> <br/>
+        <h2 style="font-size: 35px;">JOIN OUR LIST</h2>
+        <h1 style="padding-top: 12px; padding-bottom: 0px; margin: 0 10px 0 10px;">Be the first to know about our latest promotions and new releases</h1>
+        
+         <form name="myForm" onSubmit="return submit()">
+            <input type="email" id="email" placeholder ="Email Address"></input><br/>
             <script>
-                function erase(){
-                    document.getElementById("email").value = "";
-                }
-                function prompt(){
-                    document.getElementById("email").value = "Email Address";
-                }
-
                 function submit(){
-                    //TO DOOOOOOOOO
+                    event.preventDefault();
+                    var email = document.getElementById("email").value;
+                    var examine_email =/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+                    if (examine_email){
+                        returm true;
+                    } else {
+                        return false;
+                    }
                 }
             </script>
-            <input type="button" onclick="submit()" value="Sign Me Up"></input>
+            <input type="submit" value="Sign Me Up" ></input>
         </form>
     </div>
 </div>
 
+<div class="line" style="margin-top: 30px;"><hr/></div>
+
+
 <!-- MUST INCLUDE - CODE FOR FOOTER  -->
 <footer class="foot">
-    <center><img id="foot_logo" src="footer.png" alt="logo"></center>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#"><i class="fa fa-yelp"></i></a>
-    <a href="#" class="fa fa-instagram"></a>
+    <center><img id="foot_logo" src="fixed_elem/footer.png" alt="logo"></center>
+    <a href="https://www.facebook.com/ilikedonutsargentina/?__tn__=%2Cd%2CP-R&eid=ARAkOxptti1jG3B3ZlPfKr1C8SH4v-Z6FfgWT8h88eKMyDHRj_tHpj1nLGXbOUu7IeuBG-WXAsy0cquA" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.yelp.com/biz/kanes-donuts-boston?osq=donuts" class="fa fa-yelp" target="_blank"></a>
+    <a href="https://www.instagram.com/donuts/" class="fa fa-instagram" target="_blank"></a>
     <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
     <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
 </footer>

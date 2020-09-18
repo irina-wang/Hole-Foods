@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MUST INCLUDE -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="sheet.css">
+<link rel="icon" href="fixed_elem/logo.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hole Foods</title>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="menu.js"></script>
+<!----------------->
+
+<!-- STYLING FOR MENU + MERCH -->
+<style type = "text/css">
+
+.grid {
+	background-color: #fff;
+	border: 10px solid #f5cbde;
+	color: white;
+	padding: 1rem;
+	/*height: 18em;*/
+	height: 83%;
+/*	margin-left: auto;
+	margin-right: auto;
+	align-self: center;*/
+	/*justify-content: center !important;*/
+
+}
+
+.parentcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+.image{
+	width: 90%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block;
+}
+
+/*@media screen and (max-width: 621px) {
+    .grid {
+    	height: 28em;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .grid {
+    	height: 27em;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .grid {
+    	height: 25.5em;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .grid {
+    	height: 24em;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .grid {
+    	height: 24.5em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .grid {
+    	height: 23em;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .grid {
+    	height: 21.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+    	height: 20em;
+    }
+}*/
+
+@media screen and (max-width: 621px) {
+    .parentcontainer {
+    	grid-gap: 3rem;
+    }
+    .grid {
+    	height: 95%;
+    }
+    .image {
+    	width: 70%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .parentcontainer {
+    	grid-gap: 3rem;
+    }
+    .grid {
+    	height: 90%;
+    }
+    .image {
+    	width: 60%;
+    }
+}
+
+.pagetitle {
+	width: 20%;
+}
+
+.donutname {
+	font-size: 22px;
+	text-align: center;
+}
+
+.colorbuttons {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+.blackbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family:'Quicksand', sans-serif;
+
+}
+
+.blackbutton:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.bluebutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #00A2FF;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family:'Quicksand', sans-serif;
+
+}
+
+.bluebutton:hover {
+  background-color: #00A2FF;
+  color: #FFFFFF;
+}
+
+.ivorybutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFEEDD;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.ivorybutton:hover {
+  background-color: #FFEEDD;
+  color: #000000;
+}
+
+.pinkbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFAFD5;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.pinkbutton:hover {
+	background-color: #FFAFD5;
+	color: #FFFFFF;
+}
+
+.yellowbutton {
+  background-color: #FFFFFF; 
+  color: #000000; 
+  border: 2px solid #FFEF7C;
+    border-radius: 5px;
+  font-size: 13px;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.yellowbutton:hover {
+  background-color: #FFEF7C;
+  color: #000000;
+}
+
+</style>
+
+<!------------------------------>
+
+</head>
+
+<body>
+<!-- CODE FOR HEADER AND MENU -->
+<span class="header">
+    <img class="menu-ham" src="fixed_elem/hamburger.png">
+    <center><a href="index.html"><img src="fixed_elem/logo.png" id="logo" alt="logo"></a></center>
+    <center><h1>feel whole again</h1></center>
+</span>
+
+<div class="menu">
+    <div class="close-menu">
+        <img src="fixed_elem/close.png">
+    </div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+        <li><a href="location.html">LOCATION</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+
+<nav class="container navbar">
+    <span class="page"><a href="index.html"class="disabled">HOME</a></span>
+    <span class="page"><a href="about.html"class="disabled">ABOUT</a></span>
+    <span class="page"><a href="menu.html"class="disabled">MENU</a></span>
+    <span class="page"><a href="catering.html"class="disabled">CATERING</a></span>
+    <span class="page"><a href="location.html"class="disabled">LOCATION</a></span>
+    <span class="page"><a href="shop.html"class="disabled">SHOP</a></span>
+    <span class="page"><a href="contact.html"class="disabled">CONTACT</a></span>
+</nav>
+<!-------------------------------->
+
+
+<!-- CODE FOR MENU + MERCH  -->
+<h2 style="text-align:center;white-space:pre-wrap;">SHOP</h2>
+	
+<p style="text-align: center">  Enjoy our merch! Purchase at store only. </p>
+</br>
+
+<div class = "parentcontainer">
+	<div class = "grid"> 
+		<img class = "image" name = "firstmerch" id = "croppedhoodie" src = "merchimages/croppedhoodiepink.jpeg">
+		<div class = "colorbuttons">
+			<button class = "blackbutton" onclick = "changeHoodie('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeHoodie('navy')"> Navy </button>
+			<button class = "ivorybutton" onclick = "changeHoodie('white')"> White </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "secondmerch" id = "sweatshirt" src = "merchimages/sweatshirtblack.jpeg">
+		<div class = "colorbuttons">
+			<button class = "blackbutton" onclick = "changeSweatShirt('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeSweatShirt('blue')"> Blue </button>
+			<button class = "pinkbutton" onclick = "changeSweatShirt('pink')"> Pink </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "thirdmerch" id = "hat" src = "merchimages/capivory.jpeg">
+		<div class = "colorbuttons">
+			<button class = "ivorybutton" onclick = "changeHat('ivory')"> Ivory </button>
+			<button class = "bluebutton" onclick = "changeHat('blue')"> Blue </button>
+			<button class = "yellowbutton" onclick = "changeHat('yellow')"> Yellow </button>
+			<button class = "pinkbutton" onclick = "changeHat('pink')"> Pink </button>
+			<button class = "blackbutton" onclick = "changeHat('bucket')"> Bucket </button>
+		</div>
+	</div>
+
+	<div class = "grid"> 
+		<img class = "image" name = "fourthmerch" id = "sticker" src = "merchimages/stickerpink.jpeg">
+		<div class = "colorbuttons">
+			<button class = "blackbutton" onclick = "changeSticker('black')"> Black </button>
+			<button class = "bluebutton" onclick = "changeSticker('navy')"> Navy </button>
+			<button class = "pinkbutton" onclick = "changeSticker('pink')"> Pink </button>
+		</div>
+	</div>
+</div>
+
+</br>
+
+<script type="text/javascript">
+	
+function changeHoodie(color)
+{
+	if ( color == "black" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodiepink.jpeg";
+	else if (color == "navy" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodienavy.jpeg";
+	else if ( color == "white" )
+		document.getElementById("croppedhoodie").src = "merchimages/croppedhoodiewhite.jpeg";
+}
+
+function changeSweatShirt(color)
+{
+	if ( color == "black" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtblack.jpeg";
+	else if (color == "blue" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtblue.jpeg";
+	else if ( color == "pink" )
+		document.getElementById("sweatshirt").src = "merchimages/sweatshirtpink.jpeg";
+
+}
+
+function changeHat(color)
+{
+	if ( color == "ivory" )
+		document.getElementById("hat").src = "merchimages/capivory.jpeg";
+	else if (color == "blue" )
+		document.getElementById("hat").src = "merchimages/capblue.jpeg";
+	else if ( color == "yellow" )
+		document.getElementById("hat").src = "merchimages/capyel.jpeg";
+	else if (color == "pink" )
+		document.getElementById("hat").src = "merchimages/cappink.jpeg";
+	else if (color == "bucket" )
+		document.getElementById("hat").src = "merchimages/buckethatwhite.jpeg";
+
+}
+
+
+function changeSticker(color)
+{
+	if ( color == "black" )
+		document.getElementById("sticker").src = "merchimages/stickerwhite.jpeg";
+	else if (color == "navy" )
+		document.getElementById("sticker").src = "merchimages/stickernavy.jpeg";
+	else if ( color == "pink" )
+		document.getElementById("sticker").src = "merchimages/stickerpink.jpeg";
+
+}
+
+
+</script>
+
+
+
+<!-- MUST INCLUDE - CODE FOR FOOTER  -->
+<footer class="foot">
+    <center><img id="foot_logo" src="fixed_elem/footer.png" alt="logo"></center>
+    <a href="https://www.facebook.com/ilikedonutsargentina/?__tn__=%2Cd%2CP-R&eid=ARAkOxptti1jG3B3ZlPfKr1C8SH4v-Z6FfgWT8h88eKMyDHRj_tHpj1nLGXbOUu7IeuBG-WXAsy0cquA" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.yelp.com/biz/kanes-donuts-boston?osq=donuts" class="fa fa-yelp" target="_blank"></a>
+    <a href="https://www.instagram.com/donuts/" class="fa fa-instagram" target="_blank"></a>
+    <center style="padding-bottom:10px">161 College Ave, Medford, MA 02155 &nbsp;| &nbsp; info@holefoods.com &nbsp; | &nbsp; (781) 395-6857</center>
+    <center id="copyright">COPYRIGHT HOLE FOODS 2020, ALL RIGHTS RESERVED</center>
+</footer>
+<!--------------------------------------->
+
+</body>
+</html>

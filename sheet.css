@@ -17,6 +17,7 @@ body {
     position: fixed;
     left: -100%;
     top: 0;
+    z-index: 100;
     background-color: #fff;
     box-shadow: 1px 0 5px #c0c0c0;
     -webkit-transition: all ease 0.3s;
@@ -72,7 +73,6 @@ h1 {
 }
 
 h2 {
-    
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     font-weight: 900;
@@ -113,6 +113,7 @@ h3 {
 
 /* ---------- FOOTER ----------- */
 .foot {
+    display: block;
     box-sizing: border-box;
     height: 200px;
     font-size: 18px;
@@ -156,6 +157,11 @@ h3 {
 
 @media screen and (max-width: 686px)
 {
+    .header #logo:hover {
+        -webkit-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
     .close-menu {
         position: absolute;
         right: 25px;
