@@ -1,6 +1,6 @@
 # Hole Foods
 
-https://csiu18.github.io/Midterm_Project/index.html
+https://csiu18.github.io/HoleFoods/
 
 Hole Foods is a fictional donut shop based in Medford MA. Currently located in areas: Medford, Tufts, and Boston/Chinatown, Hole Foods creates unique, hand-crafted doughnuts, made daily in small batches. We have over 20 different flavors, and more as seasonal offers. We've got dedicated doughnut designers who work around the clock to ensure we deliver the dreamiest, freshest doughnuts to our stores, seven days a week.
 
